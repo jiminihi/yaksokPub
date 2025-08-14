@@ -1,0 +1,17 @@
+:root {
+	--header: 56px;
+	--nav: 60px;
+
+	--xsmall: 28px;
+	--small: 36px;
+	--regular: 44px;
+	--medium: 48px;
+	--large: 56px;
+}
+
+@media (min-width: 600px) {
+	:root {
+		--conW: 600px;
+		--conR: 20.83vw;
+	}
+}
