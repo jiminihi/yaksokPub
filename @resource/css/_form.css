@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* hanbom.com _ 처음이라 _ KimJuyeon _ 20220726 */
+/* ICT TeamONE _ 약을 쏘옥, 약속 _ KimJuyeon _ 20250818 */
+
 /* box-sizeing */
 label,
 input,
@@ -58,7 +59,7 @@ fieldset						{display: block;}
 /* checkbox */
 .check-wrap						{
 	display: -ms-inline-flexbox; display: -webkit-inline-flex; display: inline-flex;
-	-webkit-align-items: center; -ms-flex-align: center; align-items: center;
+	align-items: center;
 }
 .radio,
 .checkbox						{vertical-align: middle; display: inline-block;}
@@ -100,14 +101,14 @@ fieldset						{display: block;}
 }
 .checkbox:after					{top: 8px; width: 10px; height: 10px; background: url(../images/common/check.svg) no-repeat 50% 50%;}
 .radio:after					{width: 12px; height: 12px; background-color: var(--light-gray);}
-.checkbox:checked:before		{border-color: var(--golden-yellow); background-color: var(--golden-yellow);}
+.checkbox:checked:before		{border-color: var(--blue); background-color: var(--blue);}
 .checkbox:checked:after,
 .radio:checked:after			{
 	-webkit-transform: translate(-50%, -50%) scale(1);
 			transform: translate(-50%, -50%) scale(1);
 }
-.radio:checked:before			{border-color: var(--golden-yellow);}
-.radio:checked:after			{background: var(--golden-yellow);}
+.radio:checked:before			{border-color: var(--blue);}
+.radio:checked:after			{background: var(--blue);}
 .checkbox:disabled:before,
 .radio:disabled:before			{border-color: var(--light-gray);}
 .radio:disabled:after			{background: var(--light-gray);}
@@ -127,7 +128,7 @@ fieldset						{display: block;}
 	-ms-transform: translateX(0);
 	transform: translateX(0);
 }
-.toggle [type="checkbox"]:checked	{background: var(--golden-yellow);}
+.toggle [type="checkbox"]:checked	{background: var(--blue);}
 .toggle [type="checkbox"]:checked + span:after	{
 	-webkit-transform: translateX(15px);
 	-ms-transform: translateX(15px);
@@ -144,7 +145,7 @@ fieldset						{display: block;}
 .select-icons label input	{position: absolute; height: 1px; width: 1px; border: 0; overflow: hidden; z-index: -1; overflow: hidden; background:var(--light-gray)}
 /* select-options */
 .select-options			{position: relative; height: 48px; overflow: hidden;
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
+	display: flex;
 }
 .select-options:before			{content: ''; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: solid 1px var(--light-gray);
 	border-radius: 4px;
@@ -158,12 +159,12 @@ fieldset						{display: block;}
 }
 .select-options label:not(:first-child)			{border-left: 1px solid  var(--light-gray)}
 .select-options label .btn.medium:not(.circle)	{width: 100%;}
-.select-options input:checked + .btn		{color: white; background-color: var(--golden-yellow); z-index: 2;}
-.select-options input:checked + .btn:after	{content: ''; display: block; position: absolute; top: -1px; left: -1px; right: 0; bottom: 0; border: 2px solid var(--golden-yellow);}
+.select-options input:checked + .btn		{color: white; background-color: var(--blue); z-index: 2;}
+.select-options input:checked + .btn:after	{content: ''; display: block; position: absolute; top: -1px; left: -1px; right: 0; bottom: 0; border: 2px solid var(--blue);}
 
 /* select-icons */
 .select-icons			{
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
+	display: flex;
 	-webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;
 }
 .select-icons label.btn,
@@ -175,11 +176,11 @@ fieldset						{display: block;}
 .select-icons input:not(:checked) + .svg-wrap,
 .select-icons .icon-wrap .svg-wrap			{background-color: var(--very-light-gray-2);}
 .select-icons input:checked + .svg-wrap,
-.select-icons .icon-wrap.checked .svg-wrap	{background-color: var(--golden-yellow);}
+.select-icons .icon-wrap.checked .svg-wrap	{background-color: var(--blue);}
 .select-icons input:checked + .svg-wrap img,
 .select-icons .icon-wrap.checked img	{filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);}
 .select-icons input:checked + .svg-wrap + .txt,
-.select-icons .icon-wrap.checked .txt	{color: var(--golden-yellow);}
+.select-icons .icon-wrap.checked .txt	{color: var(--blue);}
 @media all and (max-width: 414px){
 	.select-icons label,
 	.select-icons .icon-wrap			{margin-right: calc((100% - (64px * 4))/3);}
@@ -281,7 +282,7 @@ fieldset						{display: block;}
 /* upload */
 .upload-scroll				{display: block; width: 100%; max-width: 303px; overflow: auto hidden;}
 .upload-wrap				{width: auto;
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
+	display: flex;
 }
 .insert.upload-btn,
 .upload-wrap .upload-btn		{position: relative; top: 0; left: 0; width: 100%;  z-index: 1;}
@@ -306,10 +307,10 @@ fieldset						{display: block;}
 
 /* rating */
 .rating {position: relative; overflow: hidden; width: 100%; height: 48px; background-color: var(--very-light-gray-2);
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
+	display: flex;
 	-webkit-flex-direction: row-reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse;
 	-webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
-	-webkit-align-items: center; -ms-flex-align: center; align-items: center;
+	align-items: center;
 }
 .rating-0 {filter: grayscale(100%);}
 .rating > input {display: none;}
@@ -329,11 +330,11 @@ fieldset						{display: block;}
 /* field-msg  */
 label.field										{display: block; width: 100%}
 div.field										{width: 100%;
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
+	display: flex;
 }
 div.field.both									{
-	-webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between;
-	-webkit-align-items: center; -ms-flex-align: center; align-items: center;
+	justify-content: space-between;
+	align-items: center;
 }
 div.field:not(.both)							{
 	-webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
@@ -352,14 +353,12 @@ div.field:not(.both)							{
 
 /* .input-has-* */
 .input-has-btn							{position: relative;
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
-	-webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between;
-	-webkit-align-items: center; -ms-flex-align: center; align-items: center;
+	display: flex; justify-content: space-between; align-items: center;
 }
 .input-has-btn .input-text,
 .input-has-btn .btn,
-.input-has-btn .unit					{
-	-webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto;
+.input-has-btn .unit					{ 
+	flex: 1 1 auto;
 }
 .input-has-btn > .input-text,
 .input-has-btn > .select				{border: 0 none}
@@ -381,7 +380,7 @@ div.field:not(.both)							{
 .comment-form .textarea:focus + .btn	{color: black}
 .comment-form .for-sticker.img-wrap img	{margin-top: 4px;}
 .comment-form .for-sticker.img-wrap .btn	{position: absolute; top: 0; right: 0; padding: 8px;}
-.field i.required						{color: var(--golden-yellow);}
+.field i.required						{color: var(--blue);}
 .field .flex-both .select + .select,
 .field .flex-both .input-has-btn + .input-has-btn,
 .field .flex-both .select+ .input-has-btn		{margin-left: -1px;}
@@ -390,20 +389,20 @@ div.field:not(.both)							{
 .field .flex-both .select:not(:last-child),
 .field .flex-both .input-has-btn:not(:last-child){
 	border-top-right-radius: 0;
-	-moz-border-top-right-radius: 0;
-	-webkit-border-top-right-radius: 0;
+	
+	
 	border-bottom-right-radius: 0;
-	-moz-border-bottom-right-radius: 0;
-	-webkit-border-bottom-right-radius: 0;
+	
+	
 }
 .field .flex-both .select:not(:first-child),
 .field .flex-both .input-has-btn:not(:first-child){
 	border-top-left-radius: 0;
-	-moz-border-top-left-radius: 0;
-	-webkit-border-top-left-radius: 0;
+	
+	
 	border-bottom-left-radius: 0;
-	-moz-border-bottom-left-radius: 0;
-	-webkit-border-bottom-left-radius: 0;
+	
+	
 }
 .check-robot 						{margin-top: 40px;}
 
@@ -456,7 +455,7 @@ div.field:not(.both)							{
 .write-form .hidden-guide			{display: block; text-align: right;}
 .write-form .hidden-field			{display: none;}
 .write-form .tagging-wrap			{padding: 2px 0 4px;
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
+	display: flex;
 	-webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;
 }
 .write-form .tagging-wrap .btn		{margin: 0 4px 8px 0;}

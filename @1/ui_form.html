@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 		<meta name="robots" content="noindex">
 		<meta name="googlebot" content="noindex">
-		<link rel="stylesheet" type="text/css" href="resources/css/hanbomwsg.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/wsg.css">
 		<script src="resources/libs/jquery/jquery-3.2.1.min.js"></script>
 		<script src="resources/js/wsg.js"></script>
 
@@ -167,113 +167,247 @@
 
 				<main id="content" class="content-primary">
 					<section class="section card">
+						<h3 class="section-title">CHECKBOX</h3>
+						<iframe class="preview" src="../@ex/input_check.html" title="예시화면" style="height:50px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_check.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exCheck1" title="Copy"></button>
+							<pre><code class="language-html" id="exCheck1">&lt;label class="check-wrap"&gt;
+		&lt;input type="checkbox" class="checkbox" name="cb"&gt;
+		&lt;span&gt;Checkbox&lt;/span&gt;
+	&lt;/label&gt;</code></pre><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">RADIO</h3>
+						<iframe class="preview" src="../@ex/input_radio.html" title="예시화면" style="height:50px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_radio.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exRadio1" title="Copy"></button>
+							<pre><code class="language-html" id="exRadio1">&lt;label class="check-wrap"&gt;
+		&lt;input type="radio" class="radio" name="rd"&gt;
+		&lt;span&gt;Radio&lt;/span&gt;
+	&lt;/label&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">SELECT OPTIONS</h3>
+					<div class="col-view">
+						<iframe class="preview" src="../@ex/input_select-options.html" title="예시화면">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_select-options.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exOptions" title="Copy"></button>
+							<pre><code class="language-html" id="exOptions">&lt;div class="select-options r4"&gt;
+	&lt;label&gt;
+		&lt;input type="radio" name="conditionLight"&gt;
+		&lt;span class="btn medium r4"&gt;나쁨&lt;/span&gt;
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;input type="radio" name="conditionLight"&gt;
+		&lt;span class="btn medium r4"&gt;중간&lt;/span&gt;
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;input type="radio" name="conditionLight" checked&gt;
+		&lt;span class="btn medium r4"&gt;좋음&lt;/span&gt;
+	&lt;/label&gt;
+&lt;/div&gt;&lt;!-- // .select-options --&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">SELECT ICONS</h3>
+					<div class="col-view">
+						<iframe class="preview" src="../@ex/input_select-icons.html" title="예시화면" style="height:300px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_select-icons.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exIcons" title="Copy"></button>
+							<pre><code class="language-html" id="exIcons">&lt;div class="select-icons"&gt;
+	&lt;label class="btn"&gt;
+		&lt;input type="checkbox" name="houseOpt" checked&gt;
+		&lt;span class="svg-wrap circle flex-center"&gt;
+			&lt;img src="../@resource/images/house/icon_aircon.svg" alt="에어컨"&gt;
+		&lt;/span&gt;
+		&lt;span class="txt"&gt;에어컨&lt;/span&gt;
+	&lt;/label&gt;
+
+	&lt;label class="btn"&gt;
+		&lt;input type="checkbox" name="houseOpt"&gt;
+		&lt;span class="svg-wrap circle flex-center"&gt;
+			&lt;img src="../@resource/images/house/icon_refrigerator.svg" alt="냉장고"&gt;
+		&lt;/span&gt;
+		&lt;span class="txt"&gt;냉장고&lt;/span&gt;
+	&lt;/label&gt;
+
+	&lt;label class="btn"&gt;
+		&lt;input type="checkbox" name="houseOpt"&gt;
+		&lt;span class="svg-wrap circle flex-center"&gt;
+			&lt;img src="../@resource/images/house/icon_washing.svg" alt="세탁기"&gt;
+		&lt;/span&gt;
+		&lt;span class="txt"&gt;세탁기&lt;/span&gt;
+	&lt;/label&gt;
+&lt;/div&gt;&lt;!-- // .select-options --&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">TOGGLE</h3>
+					<div class="col-view">
+						<iframe class="preview" src="../@ex/input_toggle.html" title="예시화면" style="height:50px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_toggle.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exRadio1" title="Copy"></button>
+							<pre><code class="language-html" id="exRadio1">&lt;label class="check-wrap toggle"&gt;
+	&lt;input type="checkbox" name="tg" checked&gt;
+	&lt;span&gt;&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
 						<h3 class="section-title">INPUT</h3>
-
-						<p>input type="number"의 경우 maxLength 사용</p>
-
-						<iframe class="preview" src="../@ex/input_text.html" title="예시화면" style="height: 140px;"></iframe>
+						<iframe class="preview" src="../@ex/input_text.html" title="예시화면" style="height:380px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_text.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
 
 						<div class="code-box-copy">
 							<button class="code-box-copy__btn" data-clipboard-target="#exInput1" title="Copy"></button>
-							<pre><code class="language-html" id="exInput1">&lt;input type="text" class="input-text large" placeholder="input.large"&gt;</code></pre>
+							<pre><code class="language-html" id="exInput1">&lt;label class="label-box"&gt;
+	&lt;span class="text-label"&gt;이름&lt;/span&gt;
+	&lt;input type="text" class="input-text" placeholder="이름을 입력해주세요"&gt;
+&lt;/label&gt;
+
+&lt;label class="label-box disabled"&gt;
+	&lt;span class="text-label"&gt;이름&lt;/span&gt;
+	&lt;input type="text" class="input-text" placeholder="이름을 입력해주세요" value ="옥채은" disabled&gt;
+&lt;/label&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exInput2" title="Copy"></button>
+							<pre><code class="language-html" id="exInput2">&lt;input type="text" class="input-text" placeholder="이름을 입력해주세요"&gt;
+&lt;input type="text" class="input-text" placeholder="박보미" disabled&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exInput3" title="Copy"></button>
+							<pre><code class="language-html" id="exInput3">&lt;div class="input-has-btn r4"&gt;
+	&lt;input type="password" class="input-text" placeholder="비밀번호를 입력해주세요"&gt;
+	&lt;button type="button" class="btn transparent toggle-password" onclick="togglePass(this);"&gt;
+		&lt;i class="ico no-show s20"&gt;&lt;span&gt;비밀번호 보기&lt;/span&gt;&lt;/i&gt;
+	&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="input-has-btn r4"&gt;
+	&lt;input type="password" class="input-text" placeholder="비밀번호를 입력해주세요" value="123456!" disabled&gt;
+	&lt;button type="button" class="btn transparent toggle-password" onclick="togglePass(this);"&gt;
+		&lt;i class="ico no-show s20"&gt;&lt;span&gt;비밀번호 보기&lt;/span&gt;&lt;/i&gt;
+	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exInput4" title="Copy"></button>
+							<pre><code class="language-html" id="exInput4">&lt;label class="label-box"&gt;
+	&lt;span class="text-label"&gt;이메일 주소&lt;/span&gt;
+	&lt;input type="text" class="input-text" value="qhaqha@hanbom.com"&gt;
+&lt;/label&gt;
+&lt;p class="field-msg"&gt;
+	영문, 숫자, 특수문자 포함 8자이상이어야 합니다
+	&lt;span class="warning"&gt;이미 사용중인 이메일 입니다&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;label class="label-box"&gt;
+	&lt;span class="text-label"&gt;비밀번호&lt;/span&gt;
+	&lt;input type="password" class="input-text" value="123456qwert!@"&gt;
+&lt;/label&gt;
+&lt;p class="field-msg"&gt;
+	영문, 숫자, 특수문자 포함 8자이상이어야 합니다
+&lt;/p&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exInput5" title="Copy"></button>
+							<pre><code class="language-html" id="exInput5">&lt;input type="search" class="input-text" placeholder="검색어를 입력해주세요"&gt;</code></pre>
 						</div><!-- //.code-box-copy -->
 					</section>
 
 					<section class="section card">
 						<h3 class="section-title">SELECT</h3>
-						<iframe class="preview" src="../@ex/input_select.html" title="예시화면" style="height:140px;"></iframe>
+						<iframe class="preview" src="../@ex/input_select.html" title="예시화면" style="height:60px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_select.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
 
 						<div class="code-box-copy">
 							<button class="code-box-copy__btn" data-clipboard-target="#exSelect1" title="Copy"></button>
-							<pre><code class="language-html" id="exSelect1">&lt;select class="select small is-empty"&gt;
-	&lt;option value="" disabled selected&gt;선택&lt;/option&gt;
-	&lt;option value="1"&gt;1&lt;/option&gt;
-	&lt;option value="2"&gt;2&lt;/option&gt;
+							<pre><code class="language-html" id="exSelect1">&lt;select class="select small"&gt;
+	&lt;option value="" disabled selected&gt;{}를 선택해주세요&lt;/option&gt;
+	&lt;option&gt;1&lt;/option&gt;
+	&lt;option&gt;2&lt;/option&gt;
 &lt;/select&gt;</code></pre>
 						</div><!-- //.code-box-copy -->
 					</section>
 
 					<section class="section card">
-						<h3 class="section-title">Checkbox </h3>
-						<iframe class="preview" src="../@ex/input_check.html" title="예시화면" style="height:120px;"></iframe>
-
-						<p>아이디 없이 사용 할 때</p>
-						<div class="code-box-copy">
-							<button class="code-box-copy__btn" data-clipboard-target="#exCheck1" title="Copy"></button>
-							<pre><code class="language-html" id="exCheck1">&lt;label class="pack-left"&gt;
-	&lt;input type="checkbox" class="checkbox"&gt;
-	&lt;span class="label"&gt;체크박스&lt;/span&gt;
-&lt;/label&gt;
-
-&lt;label class="pack-left"&gt;
-	&lt;input type="checkbox" class="checkbox" checked&gt;
-	&lt;span class="label"&gt;체크박스:checked&lt;/span&gt;
-&lt;/label&gt;</code></pre>
-						</div><!-- //.code-box-copy -->
-
-						<p>아이디 사용 시</p>
-						<div class="code-box-copy">
-							<button class="code-box-copy__btn" data-clipboard-target="#exCheck2" title="Copy"></button>
-							<pre><code class="language-html" id="exCheck2">&lt;p class="pack-left"&gt;
-	&lt;input type="checkbox" class="checkbox" id="checkbox01" disabled&gt;
-	&lt;label class="label" for="checkbox01"&gt;
-		체크박스:disabled
-	&lt;/label&gt;
-&lt;/p&gt;
-
-&lt;p class="pack-left"&gt;
-	&lt;input type="checkbox" class="checkbox" id="checkbox02" disabled checked&gt;
-	&lt;label class="label" for="checkbox02"&gt;
-		체크박스:disabled:checked
-	&lt;/label&gt;
-&lt;/p&gt;</code></pre>
-						</div><!-- //.code-box-copy -->
-					</section>
-
-					<section class="section card">
-						<h3 class="section-title">Radio </h3>
-						<iframe class="preview" src="../@ex/input_radio.html" title="예시화면" style="height:140px;"></iframe>
-
-						<div class="code-box-copy">
-							<button class="code-box-copy__btn" data-clipboard-target="#exRadio1" title="Copy"></button>
-							<pre><code class="language-html" id="exRadio1">&lt;label class="pack-left"&gt;
-	&lt;input type="checkbox" class="radio"&gt;
-	&lt;span class="label"&gt;라디오&lt;/span&gt;
-&lt;/label&gt;
-
-&lt;label class="pack-left"&gt;
-	&lt;input type="checkbox" class="radio" checked&gt;
-	&lt;span class="label"&gt;라디오:checked&lt;/span&gt;
-&lt;/label&gt;</code></pre>
-						</div><!-- //.code-box-copy -->
-
-						<div class="code-box-copy">
-							<button class="code-box-copy__btn" data-clipboard-target="#exRadio2" title="Copy"></button>
-							<pre><code class="language-html" id="exRadio2">&lt;p class="pack-left"&gt;
-	&lt;input type="checkbox" class="radio" id="checkbox01" disabled&gt;
-	&lt;label class="label" for="checkbox01"&gt;
-		라디오:disabled
-	&lt;/label&gt;
-&lt;/p&gt;
-
-&lt;p class="pack-left"&gt;
-	&lt;input type="checkbox" class="radio" id="checkbox02" disabled checked&gt;
-	&lt;label class="label" for="checkbox02"&gt;
-		라디오:disabled:checked
-	&lt;/label&gt;
-&lt;/p&gt;</code></pre>
-						</div><!-- //.code-box-copy -->
-					</section>
-
-					<section class="section card">
 						<h3 class="section-title">Textarea</h3>
-						<iframe class="preview" src="../@ex/input_textarea.html" title="예시화면" style="height:120px;"></iframe>
+						<iframe class="preview" src="../@ex/input_textarea.html" title="예시화면" style="height:240px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_textarea.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
 
 						<div class="code-box-copy">
 							<button class="code-box-copy__btn" data-clipboard-target="#exTextarea1" title="Copy"></button>
 							<pre><code class="language-html" id="exTextarea1">&lt;textarea class="textarea"&gt;&lt;/textarea&gt;
 
-&lt;textarea class="textarea" disabled=""&gt;textarea disabled&lt;/textarea&gt;</code></pre>
+&lt;textarea class="textarea" placeholder="텍스트를 입력해주세요" disabled=""&gt;textarea disabled&lt;/textarea&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">FILE UPLOAD</h3>
+						<div class="col-view">
+							<iframe class="preview" src="../@ex/input_file.html" title="예시화면" style="height:300px;">
+								<p>예시화면이 표시되지 않을 경우 <a href="../@ex/input_file.html">페이지 이동</a>을 클릭해 주세요.</p>
+							</iframe>
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn" data-clipboard-target="#exUpload" title="Copy"></button>
+								<pre><code class="language-html" id="exUpload">&lt;div class="field"&gt;
+	&lt;div class="label"&gt;파일첨부&lt;/div&gt;
+	&lt;div class="insert upload-btn"&gt;
+		&lt;label class="input-has-btn r4"&gt;
+			&lt;input type="file" class="js-add-file input-text r4"&gt;
+			&lt;strong class="unit"&gt;파일선택&lt;/strong&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;p class="field-msg"&gt;
+		ooMB 이하의 jpg,png,zip파일만 업로드 가능
+	&lt;/p&gt;
+	&lt;div class="file-list"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+	//파일첨부
+	fileAdd();
+&lt;/script&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+					
+					<section class="section card">
+						<h3 class="section-title">PICK OPTION</h3>
+						<div class="col-view">
+							<iframe class="preview" src="../@ex/pick_types.html" title="예시화면" style="height: 880px;">
+								<p>예시화면이 표시되지 않을 경우 <a href="../@ex/pick_types.html">페이지 이동</a>을 클릭해 주세요.</p>
+							</iframe>
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn" data-clipboard-target="#exPickForm" title="Copy"></button>
+								<pre><code class="language-html" id="exPickForm"></code></pre>
 						</div><!-- //.code-box-copy -->
 					</section>
 				</main>

@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 		<meta name="robots" content="noindex">
 		<meta name="googlebot" content="noindex">
-		<link rel="stylesheet" type="text/css" href="resources/css/hanbomwsg.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/wsg.css">
 		<script src="resources/libs/jquery/jquery-3.2.1.min.js"></script>
 		<script src="resources/js/wsg.js"></script>
 
@@ -167,83 +167,251 @@
 
 				<main id="content" class="content-primary">
 					<section class="section card">
-						<h3 class="section-title">TABS.large</h3>
-						<iframe class="preview type" src="../@ex/tabs.html" title="예시화면" style="height: 500px;"></iframe>
+						<h3 class="section-title">TABS</h2>
+
+						<iframe class="preview type" src="../@ex/tabs.html" title="예시화면" style="height:116px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/tabs.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
 
 						<div class="code-box-copy">
-							<button class="code-box-copy__btn" data-clipboard-target="#exTab1" title="Copy"></button>
-							<pre><code class="language-html" id="exTab1">&lt;ul class="tabs"&gt;
-	&lt;li class="current"&gt;&lt;a href="#tabCon1"&gt;탭 1&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#tabCon2"&gt;탭 2&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#tabCon3"&gt;탭 3&lt;/a&gt;&lt;/li&gt;
+							<button class="code-box-copy__btn" data-clipboard-target="#exTab" title="Copy"></button>
+							<pre><code class="language-html" id="exTab">&lt;ul class="tabs round"&gt;
+	&lt;li class="current"&gt;&lt;a href="#tabCon1"&gt;&lt;span&gt;TIP&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tabCon2"&gt;&lt;span&gt;TALK&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tabCon3"&gt;&lt;span&gt;Type A&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div id="tabCon1" class="tab-content active"&gt;
-	탭 1 콘텐츠
-&lt;/div&gt;
+	TIP 컨텐츠
+&lt;/div&gt;&lt;!-- // #tabCon1 --&gt;
 &lt;div id="tabCon2" class="tab-content"&gt;
-	탭 2 콘텐츠
-&lt;/div&gt;
+	TALK 컨텐츠
+&lt;/div&gt;&lt;!-- // #tabCon2 --&gt;
 &lt;div id="tabCon3" class="tab-content"&gt;
-	탭 3 콘텐츠
-&lt;/div&gt;
-
-&lt;script&gt;
-	tabLink();
-&lt;/script&gt;</code></pre><!-- //.code-box-copy -->
+	Type A 컨텐츠
+&lt;/div&gt;&lt;!-- // #tabCon3 --&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
 					</section>
 
 					<section class="section card">
-						<h3 class="section-title">TABS.medium</h3>
-						<iframe class="preview type" src="../@ex/tabs_medium.html" title="예시화면" style="height: 200px;"></iframe>
+						<h3 class="section-title">TABS LINE</h3>
+
+						<iframe class="preview type" src="../@ex/tabs2.html" title="예시화면" style="max-height: 1000px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/tabs2.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
 
 						<div class="code-box-copy">
-							<button class="code-box-copy__btn" data-clipboard-target="#exTab1medium" title="Copy"></button>
-							<pre><code class="language-html" id="exTab1medium">&lt;ul class="tabs"&gt;
-	&lt;li class="current"&gt;&lt;a href="#tabCon1"&gt;탭 1&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#tabCon2"&gt;탭 2&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#tabCon3"&gt;탭 3&lt;/a&gt;&lt;/li&gt;
+							<button class="code-box-copy__btn" data-clipboard-target="#exTab2" title="Copy"></button>
+							<pre><code class="language-html" id="exTab2">&lt;ul class="tabs line out-cont"&gt;
+	&lt;li class="current"&gt;&lt;a href="#tabAll"&gt;전체 &lt;span class="count"&gt;26&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tabLife"&gt;독LIFE &lt;span class="count"&gt;4&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tabQ"&gt;독Q &lt;span class="count"&gt;12&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tabTalk"&gt;독TALK &lt;span class="count"&gt;8&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id="tabCon1" class="tab-content active"&gt;
-	탭 1 콘텐츠
-&lt;/div&gt;
-&lt;div id="tabCon2" class="tab-content"&gt;
-	탭 2 콘텐츠
-&lt;/div&gt;
-&lt;div id="tabCon3" class="tab-content"&gt;
-	탭 3 콘텐츠
-&lt;/div&gt;
 
-&lt;script&gt;
-	tabLink();
-&lt;/script&gt;</code></pre><!-- //.code-box-copy -->
+&lt;div id="tabAll" class="tab-content active"&gt;
+	&lt;section class="section sum-life"&gt;
+		&lt;h2 class="small-title header-line"&gt;독LIFE &lt;span class="count"&gt;4&lt;/span&gt;&lt;/h2&gt;
+
+		&lt;div class="data-list"&gt;컨텐츠 생략&lt;/div&gt;
+
+		&lt;div class="button-area ta-c"&gt;
+			&lt;button type="button" class="btn bdr-gray medium" onclick="tabCurrent('#tabLife');"&gt;
+				독LIFE 더 보기
+			&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;&lt;!-- // .section.sum-life --&gt;
+
+	&lt;!-- [D] 섹션별 검색결과 0일 때 hr + section 노출안되게 --&gt;
+	&lt;hr class="out-cont section-bar"&gt;
+	&lt;section class="section sum-q"&gt;
+		&lt;h2 class="small-title header-line"&gt;독Q &lt;span class="count"&gt;12&lt;/span&gt;&lt;/h2&gt;
+
+		&lt;div class="data-list"&gt;컨텐츠 생략&lt;/div&gt;
+
+		&lt;div class="button-area ta-c"&gt;
+			&lt;button type="button" class="btn bdr-gray medium" onclick="tabCurrent('#tabQ');"&gt;
+				독Q 더 보기
+			&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;&lt;!-- // .section.sum-q --&gt;
+
+	&lt;hr class="out-cont section-bar"&gt;
+	&lt;section class="section sum-talk"&gt;
+		&lt;h2 class="small-title header-line"&gt;독TALK &lt;span class="count"&gt;8&lt;/span&gt;&lt;/h2&gt;
+
+		&lt;div class="data-list"&gt;컨텐츠 생략&lt;/div&gt;
+
+		&lt;div class="button-area ta-c"&gt;
+			&lt;button type="button" class="btn bdr-gray medium" onclick="tabCurrent('#tabTalk');"&gt;
+				독TALK 더 보기
+			&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;&lt;!-- // .section.sum-talk --&gt;
+&lt;/div&gt;&lt;!-- // #tabAll --&gt;
+
+&lt;div id="tabLife" class="tab-content"&gt;
+	&lt;div class="data-list"&gt;독LIFE 컨텐츠 생략&lt;/div&gt;
+&lt;/div&gt;&lt;!-- // #tabLife --&gt;
+
+&lt;div id="tabQ" class="tab-content"&gt;
+	&lt;div class="data-list"&gt;독Q 컨텐츠 생략&lt;/div&gt;
+&lt;/div&gt;&lt;!-- // #tabQ --&gt;
+
+&lt;div id="tabTalk" class="tab-content"&gt;
+	&lt;div class="data-list"&gt;독TALK 컨텐츠 생략&lt;/div&gt;
+&lt;/div&gt;&lt;!-- // #tabTalk --&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
 					</section>
 
 					<section class="section card">
 						<h3 class="section-title">PAGINATION</h3>
-						<iframe class="preview type" src="../@ex/pagination.html" title="예시화면" style="height: 260px;"></iframe>
+						<iframe class="preview type" src="../@ex/pagination.html" title="예시화면" style="height:40px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/pagination.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
 
 						<div class="code-box-copy">
 							<button class="code-box-copy__btn" data-clipboard-target="#exPage1" title="Copy"></button>
 							<pre><code class="language-html" id="exPage1">&lt;div class="pagination"&gt;
-	&lt;a href="javascript:void(0);" class="btn prev"&gt;
-		&lt;svg viewBox="0 0 20 20"&gt;
-			&lt;path fill-rule="evenodd" clip-rule="evenodd" d="M7.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L12.586 10 7.293 4.707a1 1 0 0 1 0-1.414z" class="fill-fff"/&gt;
-		&lt;/svg&gt;
-
-	&lt;/a&gt;
+	&lt;a href="javascript:void(0);" class="prev"&gt;&lt;i class="ico page-arr"&gt;&lt;span&gt;&lt;&lt;/span&gt;&lt;/i&gt;&lt;/a&gt;
 	&lt;ul&gt;
-		&lt;li class="current"&gt;&lt;a href="javascript:void(0);" class="btn"&gt;1&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href="javascript:void(0);" class="btn"&gt;2&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href="javascript:void(0);" class="btn"&gt;3&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;span class="dot-3"&gt;...&lt;/span&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href="javascript:void(0);" class="btn"&gt;10&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="javascript:void(0);"&gt;1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="javascript:void(0);"&gt;2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="current"&gt;&lt;a href="javascript:void(0);"&gt;3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;span class="dot3"&gt;...&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="javascript:void(0);"&gt;11&lt;/a&gt;&lt;/li&gt;
 	&lt;/ul&gt;
-	&lt;a href="javascript:void(0);" class="btn next"&gt;
-		&lt;svg xmlns="http://www.w3.org/2000/svg" class="svg"&gt;
-			&lt;path fill-rule="evenodd" clip-rule="evenodd" d="M7.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L12.586 10 7.293 4.707a1 1 0 0 1 0-1.414z" class="fill-fff"/&gt;
-		&lt;/svg&gt;
-	&lt;/a&gt;
-&lt;/div&gt;&lt;!-- // .pagination --&gt;</code></pre>
+	&lt;a href="javascript:void(0);" class="next"&gt;&lt;i class="ico page-arr"&gt;&lt;span&gt;&gt;&lt;/span&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">RATING</h3>
+						<iframe class="preview type" src="../@ex/rating.html" title="예시화면">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/rating.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exRating" title="Copy"></button>
+							<pre><code class="language-html" id="exRating">&lt;div class="rating r4"&gt;
+	&lt;input type="radio" name="rating" id="rating-5"&gt;
+	&lt;label for="rating-5"&gt;&lt;/label&gt;
+	&lt;input type="radio" name="rating" id="rating-4"&gt;
+	&lt;label for="rating-4"&gt;&lt;/label&gt;
+	&lt;input type="radio" name="rating" id="rating-3"&gt;
+	&lt;label for="rating-3"&gt;&lt;/label&gt;
+	&lt;input type="radio" name="rating" id="rating-2"&gt;
+	&lt;label for="rating-2"&gt;&lt;/label&gt;
+	&lt;input type="radio" name="rating" id="rating-1"&gt;
+	&lt;label for="rating-1"&gt;&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">RATING POINT</h3>
+						<iframe class="preview type" src="../@ex/rating_re.html" title="예시화면">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/rating.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exRating" title="Copy"></button>
+							<pre><code class="language-html" id="exRating">&lt;div class="star-score"&gt;
+	&lt;i class="ico star small active"&gt;&lt;span&gt;★&lt;/span&gt;&lt;/i&gt;
+	&lt;i class="ico star small active"&gt;&lt;span&gt;★&lt;/span&gt;&lt;/i&gt;
+	&lt;i class="ico star small active"&gt;&lt;span&gt;★&lt;/span&gt;&lt;/i&gt;
+	&lt;i class="ico star small"&gt;&lt;span&gt;☆&lt;/span&gt;&lt;/i&gt;
+	&lt;i class="ico star small"&gt;&lt;span&gt;☆&lt;/span&gt;&lt;/i&gt;
+	&lt;span&gt;3&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">FILTER</h3>
+
+						<iframe class="preview type" src="../@ex/filter.html" title="예시화면">
+							<p>예시화면이 표시되지 않을 경우 <a href="../@ex/filter.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exFilter" title="Copy"></button>
+							<pre><code class="language-html" id="exFilter">
+&lt;div class="list-control"&gt;
+	&lt;button type="button" class="btn transparent" onclick="modalOpen('#popFilter')"&gt;&lt;i class="ico filter"&gt;&lt;/i&gt; 필터&nbsp;
+		&lt;span class="fc-blue" id="filterCount"&gt;4&lt;/span&gt;
+	&lt;/button&gt;
+
+	&lt;div class="sorting-wrap check-wrap"&gt;
+		&lt;label class="check-wrap"&gt;
+			&lt;input type="radio" class="sorting" name="sorting" checked&gt;
+			&lt;span&gt;최신 순&lt;/span&gt;
+		&lt;/label&gt;
+
+		&lt;label class="check-wrap"&gt;
+			&lt;input type="radio" class="sorting" name="sorting"&gt;
+			&lt;span&gt;좋아요 순&lt;/span&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+
+	&lt;div class="filtering-wrap"&gt;
+		&lt;button type="button" class="btn filtering"&gt;음식&lt;/button&gt;
+		&lt;button type="button" class="btn filtering"&gt;생활&lt;/button&gt;
+		&lt;button type="button" class="btn filtering"&gt;건강&lt;/button&gt;
+		&lt;button type="button" class="btn filtering"&gt;기타&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">tooltip</h3>
+
+						<iframe class="preview type" src="../@ex/tooltip.html" title="예시화면" sytle="height:500px">
+								<p>예시화면이 표시되지 않을 경우 <a href="../@ex/tooltip.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exTooltip" title="Copy"></button>
+							<pre><code class="language-html" id="exTooltip">&lt;button type="button" class="btn transparent" onclick="modalOpen('#tooltipRank');"&gt;&lt;i class="ico what"&gt;&lt;span&gt;?&lt;/span&gt;&lt;/i&gt;&lt;/button&gt;
+
+&lt;div id="tooltipRank" class="overlay"&gt;
+	&lt;div class="tooltip"&gt;
+		&lt;h2 class="tooltip-title"&gt;인기 TIP&amp;TALK&lt;/h2&gt;
+		&lt;div class="tooltip-text"&gt;
+			&lt;p&gt;조회 시점 기준 최근 3일 내 등록된 &lt;br&gt;게시글 중 좋아요 순이 높은 3개의 &lt;br&gt;게시물이 노출됩니다.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;button type="button" class="btn transparent large" onclick="modalClose('#tooltipRank');"&gt;확인&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;!-- // #tooltipRank --&gt;</code></pre>
+						</div><!-- //.code-box-copy -->
+					</section>
+
+					<section class="section card">
+						<h3 class="section-title">moreview</h3>
+						<iframe class="preview type" src="../@ex/moreview.html" title="예시화면" sytle="height:500px">
+								<p>예시화면이 표시되지 않을 경우 <a href="../@ex/moreview.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exMoreview" title="Copy"></button>
+							<pre><code class="language-html" id="exMoreview">내글의 &lt;button type="button" class="btn transparent more" onclick="modalOpen('#moreMine');"&gt;&lt;i class="ico more-3dot"&gt;&lt;span&gt;더보기&lt;/span&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;br&gt;
+다른 사람글&lt;button type="button" class="btn transparent more" onclick="modalOpen('#moreOthers');"&gt;&lt;i class="ico more-3dot"&gt;&lt;span&gt;더보기&lt;/span&gt;&lt;/i&gt;&lt;/button&gt;
+
+
+&lt;div id="moreMine" class="overlay"&gt;
+	&lt;div class="more-box"&gt;
+		&lt;button type="button" class="btn transparent large" onclick="modalClose('#moreMine');"&gt;&lt;span class="fc-blue"&gt;수정하기&lt;/span&gt;&lt;/button&gt;
+		&lt;button type="button" class="btn transparent large" onclick="modalClose('#moreMine');"&gt;삭제하기&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;!-- // #moreView --&gt;
+
+&lt;div id="moreOthers" class="overlay"&gt;
+	&lt;div class="more-box"&gt;
+		&lt;button type="button" class="btn transparent large" onclick="modalClose('#moreOthers');"&gt;신고하기&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;!-- // #moreView --&gt;</code></pre>
 						</div><!-- //.code-box-copy -->
 					</section>
 				</main>

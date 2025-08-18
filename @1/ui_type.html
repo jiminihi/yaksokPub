@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 		<meta name="robots" content="noindex">
 		<meta name="googlebot" content="noindex">
-		<link rel="stylesheet" type="text/css" href="resources/css/hanbomwsg.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/wsg.css">
 		<script src="resources/libs/jquery/jquery-3.2.1.min.js"></script>
 		<script src="resources/js/wsg.js"></script>
 
@@ -172,28 +172,63 @@
 
 						<div class="code-box-copy">
 							<button class="code-box-copy__btn" data-clipboard-target="#exType1" title="Copy"></button>
-							<pre><code class="language-html" id="exType1">&lt;p&gt;
-	법무법인(유한) 클라스한결의 폰트 패밀리는 &lt;strong class="fw-700 fc-000"&gt;Pretendard&lt;/strong&gt;입니다.
-&lt;/p&gt;
-&lt;p&gt;
-	본문의 기본 폰트 사이즈는 18px
-	줄간은 &lt;em class="fw-700 fc-000"&gt;150%(1.5rem)&lt;/em&gt;,
-	자간은 &lt;span class="fw-700 fc-000"&gt;0&lt;/span&gt;,
-	컬러는 &lt;strong class="fw-700 fc-000"&gt;#222&lt;/strong&gt;입니다.
-&lt;/p&gt;</code></pre>
+							<pre><code class="language-html" id="exType1"><p>약을 쏘옥, 약속의 본문 스타일을 지정합니다.<br>
+약을 쏘옥, 약속의 폰트 패밀리는 국문 <strong class="fw-700">Pretendard</strong>, 영문/숫자 <strong class="fw-700">Poppins</strong>입니다.
+</p>
+<p>본문의 기본 폰트 사이즈는 14px 줄간격은 <em class="fw-700">21px</em>, 자간은 <span class="fw-semi-bold">-30</span>, 컬러는 <strong class="fw-700">#000</strong>입니다.
+</p>
+<p>국문 글꼴의 두께는 <strong class="fw-700">두껍게</strong>, <em class="fw-600">조금 두껍게</em>, <em class="fw-500">중간 두게</em>, <em class="fw-400">일반 두께</em>, <em class="fw-300">얇은 두께</em>입니다.
+</p>
+<p>영문/숫자 굵기는 <strong class="fw-700">Bold</strong>, <em class="fw-600">SemiBold</em>, <em class="fw-500">Medium</em>, <em class="fw-400">Regular</em>, <em class="fw-300">Light</em>입니다.
+</p></code></pre>
 						</div><!-- //.code-box-copy -->
 					</section>
 
 					<section class="section card">
+						<h3 class="section-title">FONT WEIGHT</h3>
+						<iframe class="preview type_h" src="../@ex/type_weight.html" title="예시화면" style="height: 280px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="type_weight.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exTypeWeight" title="Copy"></button>
+							<pre><code class="language-html" id="exTypeWeight">&lt;strong class="fw-700"&gt;국문 글꼴 두께 : 국문 두껍게&lt;/strong&gt;,&lt;br&gt;
+&lt;strong class="fw-600"&gt;국문 글꼴 두께 : 국문 약간 두껍게 &lt;/strong&gt;,&lt;br&gt;
+&lt;strong class="fw-500"&gt;국문 글꼴 두께 : 국문 중간 두께&lt;/strong&gt;,&lt;br&gt;
+&lt;strong class="fw-400"&gt;국문 글꼴 두께 : 국문 표준 두께&lt;/strong&gt;,&lt;br&gt;
+&lt;strong class="fw-300"&gt;국문 글꼴 두께 : 국문 얇게&lt;/strong&gt;&lt;br&gt;
+
+&lt;strong class="fw-700"&gt;영문 Font Weight : Bold&lt;/strong&gt;,&lt;br&gt;
+&lt;strong class="fw-600"&gt;영문 Font Weight : Semibold &lt;/strong&gt;,&lt;br&gt;
+&lt;strong class="fw-500"&gt;영문 Font Weight : Medium&lt;/strong&gt;,&lt;br&gt;
+&lt;strong class="fw-400"&gt;영문 Font Weight : Regular&lt;/strong&gt;,&lt;br&gt;
+&lt;strong class="fw-300"&gt;영문 Font Weight : None&lt;/strong&gt;</code></pre>
+					</div>
+				</section>
+
+					<section class="section card">
 						<h3 class="section-title">TITLE</h3>
 
-						<iframe class="preview type_h" src="../@ex/type_title.html" title="예시화면" style="height:400px;"></iframe>
+						<iframe class="preview type_h" src="../@ex/type_h.html" title="예시화면" style="height:550px;">
+							<p>예시화면이 표시되지 않을 경우 <a href="type_h.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
 
 						<div class="code-box-copy">
 							<button class="code-box-copy__btn" data-clipboard-target="#exTypeH1" title="Copy"></button>
-							<pre><code class="language-html" id="exTypeH1">&lt;h1 class="page-title"&gt;법무법인(유한) 클라스한결의 페이지 제목 스타일&lt;/h1&gt;
-&lt;h2 class="article-title"&gt;법무법인(유한) 클라스한결의 아티클 제목 스타일&lt;/h2&gt;
-&lt;h3 class="section-title"&gt;법무법인(유한) 클라스한결의 섹션 제목 스타일&lt;/h3&gt;</code></pre>
+							<pre><code class="language-html" id="exTypeH1">&lt;h1 class="page-title"&gt;페이지 제목 스타일&lt;/h1&gt;
+
+	&lt;hx class="section-title"&gt;섹션 제목 스타일&lt;/hx&gt;
+
+	&lt;hx class="article-title"&gt;컨텐츠 제목 스타일&lt;/hx&gt;
+
+	&lt;hx class="card-title"&gt;카드 제목 스타일&lt;/hx&gt;
+
+	&lt;div class="header-line flex-both"&gt;
+		&lt;h3 class="section-title"&gt;헤더라인 조합 스타일&lt;/h3&gt;
+		&lt;a href="" class="btn linkline"&gt;요소&lt;/a&gt;
+	&lt;/div&gt;
+
+	&lt;h2 class="small-title header-line"&gt;헤더라인 조합 스타일 &lt;span class="count"&gt;4&lt;/span&gt;&lt;/h2&gt;</code></pre>
 						</div><!-- //.code-box-copy -->
 					</section>
 

@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 		<meta name="robots" content="noindex">
 		<meta name="googlebot" content="noindex">
-		<link rel="stylesheet" type="text/css" href="resources/css/hanbomwsg.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/wsg.css">
 		<script src="resources/libs/jquery/jquery-3.2.1.min.js"></script>
 		<script src="resources/js/wsg.js"></script>
 
@@ -34,7 +34,6 @@
 					<span>WSG</span>
 				</h1>
 			</header>
-
 
 			<aside id="aside" class="aside">
 				<nav id="nav" class="aside-nav">
@@ -167,9 +166,26 @@
 
 				<main id="content" class="content-primary">
 					<section class="section card">
-						<h3 class="section-title">STYLE</h3>
-						<p>solid / bdr-blue / bdr-white 세 가지 스타일</p>
-						<iframe class="preview btns mgt-1rem" src="../@ex/btns.html" style="width:100%; height: 100px;" title="예시화면"></iframe>
+						<h3 class="box-title">TYPE</h3>
+						<p>black / bdr-gray / bdr-blue / blue 네 가지 타입</p>
+						<iframe class="preview btns mgt-1rem" src="../@ex/btns.html" style="width:100%;height:140px;" title="예시화면">
+							<p>예시화면이 표시되지 않을 경우 <a href="btns.html">페이지 이동</a>을 클릭해 주세요.</p>
+						</iframe>
+
+						<div class="code-box-copy">
+							<button class="code-box-copy__btn" data-clipboard-target="#exBtn" title="Copy"></button>
+							<pre><code class="language-html" id="exBtn">&lt;a class="btn black medium" href="javascript:void(0);"&gt;black&lt;/a&gt;
+&lt;button type="button" class="btn black medium"&gt;black&lt;/button&gt;
+
+&lt;a class="btn bdr-gray medium" href="javascript:void(0);"&gt;bdr-gray&lt;/a&gt;
+&lt;button type="button" class="btn bdr-gray medium"&gt;bdr-gray&lt;/button&gt;
+
+&lt;a class="btn bdr-blue medium" href="javascript:void(0);"&gt;bdr-blue&lt;/a&gt;
+&lt;button type="button" class="btn bdr-blue medium"&gt;bdr-blue&lt;/button&gt;
+
+&lt;a class="btn blue medium" href="javascript:void(0);"&gt;blue&lt;/a&gt;
+&lt;button type="button" class="btn blue medium"&gt;blue&lt;/button&gt;</code></pre>
+					</div>
 					</section>
 
 					<section class="section card">

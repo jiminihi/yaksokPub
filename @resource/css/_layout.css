@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* hanbom.com _ 처음이라 _ KimJuyeon _ 20220726 */
+/* ICT TeamONE _ 약을 쏘옥, 약속 _ KimJuyeon _ 20250818 */
 
 html								{font-size: 14px; }
 body								{width: 100%; min-width: 280px; line-height: 21px; color:#000; word-break: break-word;}
@@ -30,17 +30,15 @@ body.modal-opened{overflow: hidden; height:100%; padding-right:4px;}
 #header,
 #nav ul,
 #header .btns	{
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
-	-webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between;
-	-webkit-align-items: center; -ms-flex-align: center; align-items: center;
+	display: flex; justify-content: space-between; align-items: center;
 }
 #header,
 #nav			{z-index: 20;}
 #header > div	{z-index: 21;}
 #header,
 #nav,
-#nav .btn.bdr-yellow,
-#nav .btn.yellow,
+#nav .btn.bdr-blue,
+#nav .btn.blue,
 .tab-nav.sticky,
 #btnMyFeed	{
 	-webkit-transition: all .7s ease 0s;
@@ -59,7 +57,7 @@ body.modal-opened{overflow: hidden; height:100%; padding-right:4px;}
 #header .btns					{height: 56px; padding: 0 12px;}
 #header .btns .btn				{position: relative; width: 32px; height: 32px;}
 #header .btns .btn + .btn		{margin-left: 12px;}
-#header .btns .btn > .ico.bang-yellow	{position: absolute; top: 3px; right: 3px}
+#header .btns .btn > .ico.bang-blue	{position: absolute; top: 3px; right: 3px}
 #header .detail-line			{width: 100%; padding: 16px;}
 /* header-type */
 #container:not(.lines):not(.only-back):not(.only-close)  .detail-line,
@@ -82,12 +80,13 @@ body.modal-opened{overflow: hidden; height:100%; padding-right:4px;}
 #nav ul svg		{display: block; margin: 0 auto; width: 20px; height: 20px;}
 #nav ul svg path	{fill: var(--gray);}
 #nav ul svg + span	{display: block; margin-top: 6px}
-#nav .current svg path	{fill: var(--golden-yellow);}
-#nav .current svg + span	{color: var(--golden-yellow);}
-#nav .btn.bdr-yellow,
-#nav .btn.yellow	{position: absolute; right: 16px}
-#nav .btn.bdr-yellow	{bottom: 81px;}
-#nav .btn.yellow		{bottom: 140px;}
+#nav a:hover svg path,
+#nav .current svg path	{fill: var(--blue);}
+#nav .current svg + span	{color: var(--blue);}
+#nav .btn.bdr-blue,
+#nav .btn.blue	{position: absolute; right: 16px}
+#nav .btn.bdr-blue	{bottom: 81px;}
+#nav .btn.blue		{bottom: 140px;}
 
 /* footer */
 #footer			{padding: 28px 28px calc(28px + 59px); border-top: 1px solid var(--very-light-gray); background-color: var(--very-light-gray-2);}
@@ -104,8 +103,8 @@ body.modal-opened{overflow: hidden; height:100%; padding-right:4px;}
 
 /* popup */
 .overlay {position: fixed; top:0; bottom:0; left:0; right:0; overflow-y: scroll; padding: 16px; background: rgba(0, 0, 0, 0.5); visibility:hidden; z-index: -1;
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
-	-webkit-align-items: center; -ms-flex-align: center; align-items: center;
+	display: flex;
+	align-items: center;
 	-webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
 }
 .overlay.active				{visibility: visible; opacity: 1; overflow-y: auto; z-index: 99;}
@@ -149,8 +148,8 @@ body.modal-opened{overflow: hidden; height:100%; padding-right:4px;}
 
 /* loading */
 .loading {position: fixed; top:0; bottom:0; left:0; right:0; overflow: hidden; background: rgba(0, 0, 0, 0.5); visibility:hidden; z-index: -1;
-	display: -ms-flexbox; display: -webkit-flex; display: flex;
-	-webkit-align-items: center; -ms-flex-align: center; align-items: center;
+	display: flex;
+	align-items: center;
 	-webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
 }
 .loading.active				{visibility: visible; opacity: 1; z-index: 990;}
@@ -170,7 +169,7 @@ body.modal-opened{overflow: hidden; height:100%; padding-right:4px;}
 }
 
 /* btnMyFeed */
-#btnMyFeed	{position: fixed; bottom:calc( -4 * var(--nav)); right: 16px; width: 123px; height: 48px; background: var(--orange-yellow); z-index: 19;}
+#btnMyFeed	{position: fixed; bottom:calc( -4 * var(--nav)); right: 16px; width: 123px; height: 48px; background: var(--light-blue); z-index: 19;}
 #btnMyFeed.hide-text	{width: 48px; }
 #btnMyFeed .inline-flex.flex-center	{width: 48px; height: 48px;}
 #btnMyFeed .text		{margin-left: 12px; color: #fff; font-size: 13px;}
@@ -192,8 +191,8 @@ body.modal-opened{overflow: hidden; height:100%; padding-right:4px;}
 /*
 	scroll-zero
 */
-body:not(.scroll-has) #nav > .btn.bdr-yellow	{opacity: 0; display:none;}		/*위로*/
-body:not(.scroll-has) #nav > .btn.yellow,
+body:not(.scroll-has) #nav > .btn.bdr-blue	{opacity: 0; display:none;}		/*위로*/
+body:not(.scroll-has) #nav > .btn.blue,
 body.scroll-up:not(.scroll-has) #btnMyFeed		{bottom: 81px;}		/* 글쓰기, 내피드보기*/
 
 /*
@@ -263,8 +262,8 @@ body.opened-keyboard .fixed-element				{bottom:-60px;}
 }
 @media all and (min-width: 915px){
 	.pc-content		{position: fixed; right: calc( var(--conW) + var(--conR) + 10.98%); top: 0; width: 290px; min-height:100vh;
-		display: -ms-flexbox; display: -webkit-flex; display: flex;
-		-webkit-align-items: center; -ms-flex-align: center; align-items: center;
+		display: flex;
+		align-items: center;
 	}
 	.typing-wrap p.typing-fix{max-width: 212px; height: 230px; font-size: 48px; font-weight: 800; line-height: 1.21; letter-spacing: -1.44px;}
 	.typing-wrap .typing-fix + .typing{margin-top: 30px;}
