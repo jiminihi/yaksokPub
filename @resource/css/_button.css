@@ -57,7 +57,6 @@ button.btn					{overflow: visible; margin: 0;}
 .btn.black				{background-color: black; color:#fff}
 .btn.black:disabled		{opacity: .15;}
 .btn.bdr-gray			{border: solid 1px var(--light-gray); background-color: white; color: black;}
-.btn.bdr-gray.suggest-tag{color: var(--dark-gray);}
 .btn.bdr-gray:disabled		{border-color: var(--very-light-gray); background-color: var(--very-light-gray); color: var(--gray);}
 .btn.bdr-blue		{border: solid 1px var(--blue); background-color: white; color: var(--blue); }
 .btn.blue			{background-color: var(--blue); color:#fff}
@@ -66,19 +65,6 @@ button.btn					{overflow: visible; margin: 0;}
 .btn.link,
 .btn.linkline		{font-size: 13px; line-height: 20px; font-weight: 600; color: var(--dark-gray);}
 .btn.linkline {text-decoration: underline;}
-.btn.filtering,
-.btn.tagging,
-.btn.suggest-tag		{height: 27px; font-size: 13px; line-height: 27px;}
-.btn.filtering,
-.btn.tagging		{padding: 0 26px 0 10px; }
-.btn.filtering			{color: var(--light-blue);
-	background: var(--light-blue) url('../images/common/except-filtering.svg') no-repeat calc(100% - 10px) 50%;
-}
-.btn.tagging			{color: var(--very-dark-gray);
-	background: var(--mostly-white) url('../images/common/except-tagging.svg') no-repeat calc(100% - 10px) 50%;
-}
-.btn.suggest-tag			{padding: 0 6px; color: var(--dark-gray);}
-.btn.load-more				{margin-top: 10px; padding: 10px 10px 0;}
 .data-list.card + .ta-c		{margin-top: 24px; border-top: 1px solid var(--very-light-gray);} /* 더 보기 */
 
 /* .btn.more */
@@ -102,22 +88,9 @@ button.btn					{overflow: visible; margin: 0;}
 .btn .count					{color: var(--gray);}
 .btn object 				{position: relative; z-index: -1;}
 
-/* .btn.sns */
-.btn.sns {width: 60px; height: 60px; border-radius: 50%;}
-.btn.kakao.r6,
-.btn.naver.r6		{height: 45px; line-height: 45px;}
-.btn.kakao.r6 .ico.sns,
-.btn.naver.r6 .ico.sns	{width: 18px; height: 18px; margin-right: 6px; vertical-align: text-top;}
-.btn.kakao .txt,
-.btn.naver .txt	{font-weight: 600}
-.btn.kakao		{background-color:#FEE500;}
-.btn.kakao .txt	{color:#191919;}
-.btn.naver		{background-color:#03c75a;}
-.btn.naver .txt	{color:#fff;}
-.btn.sns > img		{display: block; width: 100%;}
-
 /* .button-area */
 .button-area				{margin-top: 28px;}
+.button-area .btn.large						{width: 100%;}
 .section-bar + .button-area					{margin-top: 36px;}
-.button-area:not(.flex-both) br + .btn		{margin-top: 18px;}
-.button-area.flex-center .btn + .btn		{margin-left: 8px}
+.button-area:not(.pack-both) br + .btn		{margin-top: 18px;}
+.button-area.pack-center .btn + .btn		{margin-left: 8px}

@@ -58,7 +58,7 @@ fieldset						{display: block;}
 
 /* checkbox */
 .check-wrap						{
-	display: -ms-inline-flexbox; display: -webkit-inline-flex; display: inline-flex;
+	display: inline-flex;
 	align-items: center;
 }
 .radio,
@@ -165,7 +165,7 @@ fieldset						{display: block;}
 /* select-icons */
 .select-icons			{
 	display: flex;
-	-webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 .select-icons label.btn,
 .select-icons .icon-wrap	{position: relative; display: block; width: 64px; margin-bottom: 28px; text-align: center;}
@@ -309,7 +309,7 @@ fieldset						{display: block;}
 .rating {position: relative; overflow: hidden; width: 100%; height: 48px; background-color: var(--very-light-gray-2);
 	display: flex;
 	-webkit-flex-direction: row-reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse;
-	-webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+	justify-content: center;
 	align-items: center;
 }
 .rating-0 {filter: grayscale(100%);}
@@ -381,13 +381,13 @@ div.field:not(.both)							{
 .comment-form .for-sticker.img-wrap img	{margin-top: 4px;}
 .comment-form .for-sticker.img-wrap .btn	{position: absolute; top: 0; right: 0; padding: 8px;}
 .field i.required						{color: var(--blue);}
-.field .flex-both .select + .select,
-.field .flex-both .input-has-btn + .input-has-btn,
-.field .flex-both .select+ .input-has-btn		{margin-left: -1px;}
-.field .flex-both .select:focus,
-.field .flex-both .input-has-btn:focus-within	{z-index: 2;}
-.field .flex-both .select:not(:last-child),
-.field .flex-both .input-has-btn:not(:last-child){
+.field .pack-both .select + .select,
+.field .pack-both .input-has-btn + .input-has-btn,
+.field .pack-both .select+ .input-has-btn		{margin-left: -1px;}
+.field .pack-both .select:focus,
+.field .pack-both .input-has-btn:focus-within	{z-index: 2;}
+.field .pack-both .select:not(:last-child),
+.field .pack-both .input-has-btn:not(:last-child){
 	border-top-right-radius: 0;
 	
 	
@@ -395,8 +395,8 @@ div.field:not(.both)							{
 	
 	
 }
-.field .flex-both .select:not(:first-child),
-.field .flex-both .input-has-btn:not(:first-child){
+.field .pack-both .select:not(:first-child),
+.field .pack-both .input-has-btn:not(:first-child){
 	border-top-left-radius: 0;
 	
 	
@@ -448,17 +448,11 @@ div.field:not(.both)							{
 .write-form .insert .input-has-btn + .input-text,
 .write-form .insert .insert-dep		{margin-top: 8px;}
 .write-form .insert .slash			{margin: 0 10px;}
-.write-form .add-field				{display: block; margin: 10px auto 0;}
-.write-form .field.bdr .add-field	{margin-bottom: 20px;}
 .write-form .field:not(.bdr) + .button-area			{margin-top: 18px;}
 .write-form .button-area .btn + .btn	{margin-left: 4px;}
 .write-form .hidden-guide			{display: block; text-align: right;}
 .write-form .hidden-field			{display: none;}
-.write-form .tagging-wrap			{padding: 2px 0 4px;
-	display: flex;
-	-webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;
-}
-.write-form .tagging-wrap .btn		{margin: 0 4px 8px 0;}
+
 .write-form .suggest-hash .title	{padding: 12px 0; font-size: 13px; line-height: 17px; font-weight: 600; color: var(--very-dark-gray);}
 .write-form .tip-box				{margin-top: 12px;}
 .write-form .section-bar			{margin-top: 36px; margin-bottom: 36px;}
@@ -497,9 +491,9 @@ div.field:not(.both)							{
 /* custom-form : SN013 & MY011 */
 .custom-form .label						{display: block; padding: 2px 0; line-height: 16px; font-weight: 600;}
 .custom-form .input-has-btn .unit		{min-width: 102px;}
-.custom-form .flex-both.flex-wrap		{line-height: 18px;}
+.custom-form .pack-both.pack-wrap		{line-height: 18px;}
 .custom-form .check-wrap				{width: 50%;}
-.custom-form .flex-both.flex-wrap .check-wrap:nth-of-type(n+3){margin-top: 20px;}
+.custom-form .pack-both.pack-wrap .check-wrap:nth-of-type(n+3){margin-top: 20px;}
 .custom-form .insert .input-has-btn		{margin-top: 8px;}
 
 /* profile-form : SN102 & SN015 & MY011 */
@@ -513,7 +507,7 @@ div.field:not(.both)							{
 .profile-form .change-img.medium		{width: 120px;}
 .profile-form .change-img.small			{margin-top: -38px; width: 76px;}
 .profile-form .change-img + .button-area{margin-top: 18px;}
-.profile-form legend.flex-both			{width: 100%}
+.profile-form legend.pack-both			{width: 100%}
 .profile-form fieldset.badges			{padding-bottom: 36px;}
 .profile-form .btn.medium.black			{width: 160px;}
 .profile-form .textarea					{height: 70px;}
@@ -523,12 +517,11 @@ div.field:not(.both)							{
 .checklist-form .title-field			{padding-bottom: 10px;}
 .checklist-form .check-wrap				{width: calc(100% - 30px);line-height: 20px;}
 .checklist-form .label					{font-weight: 500;}
-.checklist-form .field:not(.both) .flex-both + .input-text {margin-top: 12px}
+.checklist-form .field:not(.both) .pack-both + .input-text {margin-top: 12px}
 .checklist-form .section-bar			{margin: 24px 0; height: 1px;}
 .checklist-form .textarea				{margin-top: 10px; height: 100px}
 .checklist-form .add-fieldset			{padding-top: 20px; border-top: 1px solid var(--very-light-gray);}
-.checklist-form .add-fieldset,
-.checklist-form .btn.add-field			{margin-top: 20px;}
+.checklist-form .add-fieldset			{margin-top: 20px;}
 
 /* autocomplete */
 .input-text[autocomplete] + .autocomplete{position: absolute; top: 52px; left: 0;}
