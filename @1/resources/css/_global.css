@@ -50,22 +50,26 @@ strong,
 
 /* pack (flex layout) */
 [class*="pack-"]				{gap: 8px;
-	display: -webkit-flex; display: flex;
+	display: flex;
 }
 [class*="-center"]			{text-align: center;
-	-webkit-justify-content: center; justify-content: center;
+	justify-content: center;
 }
 [class*="-both"]			{
-	-webkit-justify-content: space-between; justify-content: space-between;
+	justify-content: space-between;
 }
 [class*="pack-"][class*="-top"]	{
-	-webkit-align-items: flex-start; align-items: flex-start;
+	align-items: flex-start;
 }
 .pack-center,
 .pack-left,
 .pack-both						{
-	-webkit-align-items: center; align-items: center;
+	align-items: center;
 }
+.pack-inline		{
+	display: inline-flex;	
+}
+
 .pack-left.has-bar > span + span:before		{content: ''; display: inline-block; width: 1px; height: 12px; margin: 0 12px; border-radius: 2px; background-color: var(--greyLight); vertical-align: middle;}
 
 /* table common */

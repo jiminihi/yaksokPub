@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>약을 쏘옥, 약속</title>
+
+	<link type="text/css" href="../@resource/css/yaksok.css" rel="stylesheet">
+
+	<script src="../@resource/js/lib/jquery-3.2.1.min.js"></script>
+	<script src="../@resource/js/lib/aos.js"></script>
+	<script src="../@resource/js/yaksok.js"></script>
+	
+</head>
+<body>
+
+	<div class="skip-nav">
+		<a href="#nav">내비게이션 바로가기</a>
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">헤더 바로가기</a>
+	</div>
+
+	<div id="wrap" class="wrap">
+		<div class="pc-content">
+			<div class="typing-wrap" data-aos="fade-right">
+				<p class="typing-fix">
+					약을 쏘옥,<br>
+					약속
+				</p>
+				<p class="typing">
+					<span id="pcTyping">믿음까지 쏘옥 담아</span>
+					<span id="pcTyping2">약속할께요</span>
+				</p>
+			</div>
+		</div>
+
+		<div id="container" class="lines"><!-- [D] HEADER VIEW :  no class /.lines(2) / .only-back(1) / .only-close(1) -->
+			<header id="header">
+				<h1>
+					<a href="index.html"><span class="logo"><span class="blind">약을 쏘옥</span></span></a>
+				</h1>
+
+				<div class="btns">
+
+				</div>
+
+				<div class="detail-line">
+					<button type="button" class="btn back">
+						<i class="ico back"><span>뒤로</span></i>
+					</button>
+
+					<button type="button" class="btn close">
+						<i class="ico close"><span>닫기</span></i>
+					</button>
+				</div>
+			</header>
+
+
+			<!-- SID : PL20 -->
+			<div id="content" class="pl20"><!-- [D] main / sub-main / sub && pagd name -->
+				<h1 class="page-title">Q&amp;A</h1>
+
+				<div class="section list-wrap">
+					<div class="search-bar">
+						<!--[D] 검색폼  -->
+						<form action="result.html" class="search-form">
+							<fieldset>
+								<legend class="blind">통합 검색</legend>
+								<div class="search-box pack-both r4">
+									<input type="search" class="input-text r4" placeholder="검색어를 입력해주세요" autocomplete="off">
+									<div class="autocomplete r4">
+										<ul>
+											<li>
+												<a href="javascript:void(0);" class="item"><span class="keyword-match">생활</span>꿀팁</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="item">#서핑동호회</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="item">#추천해시태그</a>
+											</li>
+										</ul>
+									</div>
+									<button type="submit" class="btn"><strong>검색</strong></button>
+								</div>
+							</fieldset>
+						</form>
+					</div><!-- .pack-both -->
+
+					<ul class="data-list">
+						<li>
+							<div class="item normal">
+								<a href="qna_view.html" class="pack-down">
+									<p class="data-wrap mdot">
+										<i class="ico-bg blue r10"><span>Q</span></i>
+										<!-- [D] 답변 전 -->
+										<span class="q-ing">궁금해요</span>
+										<!-- <span class="q-solved">궁금증해결</span> -->
+
+										<span>2025. 08. 27</span>
+									</p>
+
+									<p class="item-title">질문 제목 길어도 다 노출하는게 좋겠죠? 질문 제목 길어도 다 노출하는게 좋겠죠?질문 제목 길어도 다 노출하는게 좋겠죠?질문 제목 길어도 다 노출하는게 좋겠죠?</p>
+
+									<!-- [D] 약에 관한 질문일 경우 -->
+									<div class="pack-left">
+										<div class="item thumb-left r10">
+											<div class="img-wrap s48">
+												<img src="../@resource/images/drug_type/01.png" alt="분말" class="centered">
+												<!--
+													01	분말, 
+													02	원형캡슐, 
+													03	원형정제, 
+													04	제피정제, 
+													05	젤리, 
+													06	유동성 액체, 
+													07	경질캡슐
+												-->
+											</div>
+											<div class="data-content">
+												<p class="fs-14">제목, 약 이름이 얼마나 길줄 모르겠네요요요 </p>
+											</div>
+										</div><!-- .item.thumb-left -->
+									</div><!-- .pack-left -->
+								</a><!-- .pack-down -->
+
+								<div class="pack-both">
+									<div class="pack-left">
+										<div class="img-wrap circle s36">
+											<img src="https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_960_720.jpg" alt="프로필아이디" class="centered">
+										</div>
+										<div class="user">
+											<span class="user-name">김모모</span>
+										</div>
+									</div>
+
+									<!-- [D] 답변안된 질문 중, 전문가만 노출 -->
+									<button type="button" class="btn bdr-blue small r4" onclick="modalOpen('#popAnswer')">답변등록</button>
+								</div><!-- .pack-both -->
+							</div><!-- .item.normal -->
+						</li>
+						<li>
+							<div class="item normal">
+								<a href="qna_view.html" class="pack-down">
+									<p class="data-wrap mdot">
+										<i class="ico-bg blue r10"><span>Q</span></i>
+										<!-- [D] 답변 전 -->
+										<!-- <span class="q-ing">궁금해요</span> -->
+										<!-- [D] 답변 완료 -->
+										<span class="q-solved">궁금증해결</span>
+
+										<span>2025. 08. 27</span>
+									</p>
+
+									<p class="item-title">질문 제목 길어도 다 노출하는게 좋겠죠? 질문 제목 길어도 다 노출하는게 좋겠죠?질문 제목 길어도 다 노출하는게 좋겠죠?질문 제목 길어도 다 노출하는게 좋겠죠?</p>
+
+
+									<!-- [D] 약에 관한 질문일 경우 -->
+									<div class="pack-left">
+										<div class="item thumb-left r10">
+											<div class="img-wrap s48">
+												<img src="../@resource/images/drug_type/01.png" alt="분말" class="centered">
+												<!--
+													01	분말, 
+													02	원형캡슐, 
+													03	원형정제, 
+													04	제피정제, 
+													05	젤리, 
+													06	유동성 액체, 
+													07	경질캡슐
+												-->
+											</div>
+											<div class="data-content">
+												<p class="fs-14">제목, 약 이름이 얼마나 길줄 모르겠네요요요 </p>
+											</div>
+										</div><!-- .item.thumb-left -->
+									</div><!-- .pack-left -->
+								</a><!-- .pack-down -->
+
+								<div class="pack-both">
+									<div class="pack-left">
+										<div class="img-wrap circle s36">
+											<img src="https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_960_720.jpg" alt="프로필아이디" class="centered">
+										</div>
+										<div class="user">
+											<span class="user-name">김모모</span>
+										</div>
+									</div>
+							</div><!-- .item.normal -->
+						</li>
+					</ul>
+
+					<div class="pagination">
+						<a href="javascript:void(0);" class="prev"><i class="ico page-arr"><span>&lt;</span></i></a>
+						<ul>
+							<li><a href="javascript:void(0);">1</a></li>
+							<li><a href="javascript:void(0);">2</a></li>
+							<li class="current"><a href="javascript:void(0);">3</a></li>
+							<li><a href="javascript:void(0);">4</a></li>
+							<li><a href="javascript:void(0);">5</a></li>
+						</ul>
+						<a href="javascript:void(0);" class="next"><i class="ico page-arr"><span>&gt;;</span></i></a>
+					</div><!-- .pagination -->
+				</div><!-- .section.list-wrap -->
+			</div><!-- #content -->
+
+			<footer id="footer" class="footer">
+				<div class="footer-menu">
+					<a href="../etc/brand.html" class="btn transparent">약속 소개</a>
+					<a href="../cs/faq.html" class="btn transparent">FAQ</a>
+				</div>
+				<div class="com-info">
+					<p>YAKSOK</p>
+					<p>
+						서울특별시 마포구 백범로 23, 3층 (신수동, 케이터틀)
+					</p>
+					<p>대표 김민우 · 정연우 · 최민진</p>
+					<p>김주연 · 박미리 · 이경욱 · 옥채은 · 김동관</p>
+					<p>문의 <a href="mailto:finalbossveigar1@gmail.com">finalbossveigar1@gmail.com</a></p>
+				</div>
+				<p class="copyright">
+					Copyright 2025. ICT05TEAMONE Inc.<br>
+					All Rights Reserved.
+				</p>
+			</footer>
+		</div><!-- // #container -->
+	</div><!-- // #wrap -->
+
+	<div id="loading" class="loading">
+		<img src="../@resource/images/common/loading.svg" alt="loading">
+	</div><!-- // #loading -->
+
+	<script>
+		nav.init();
+		nav.current('4');
+
+		//AutoCom
+		$('.input-text[autocomplete]').on('keyup',function(e){
+			var myTxt = $(this).val();
+			if (myTxt.length > 0) {
+				$(this).siblings('.autocomplete').addClass('active');
+			}
+		});
+		$('.input-text[autocomplete]').on('focusout',function(e){
+			$(this).siblings('.autocomplete').removeClass('active');
+		});
+	</script>
+</body>
+</html>

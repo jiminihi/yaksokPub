@@ -2,7 +2,7 @@
 /* ICT TeamONE _ 약을 쏘옥, 약속 _ KimJuyeon _ 20250818 */
 
 html								{font-size: 14px; }
-body								{width: 100%; min-width: 280px; line-height: 21px; color:#000; word-break: break-word;}
+body								{width: 100%; min-width: 280px; line-height: 1.4; color:#000; word-break: break-word;}
 body,
 input,
 select,
