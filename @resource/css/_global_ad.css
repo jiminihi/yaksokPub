@@ -147,6 +147,11 @@ hr.line			{border-width: 2px 0 0 0; border-color: var(--body-bg-color); border-s
 .pack-left.has-bar > span + span:before		{content: ''; display: inline-block; width: 1px; height: 12px; margin: 0 12px; border-radius: 2px; background-color: var(--temp); vertical-align: middle;}
 
 
+@media (min-width: 768px) {
+	.mo-pack-down			{
+		flex-direction: column;
+	}
+}
 /* item */
 .item					{position: relative;}
 
@@ -203,7 +208,7 @@ table th,
 table td						{border-bottom: 1px solid var(--bdr-color);}
 table thead th					{padding: .75rem 1.25rem; text-align: center;}
 table tbody th,
-table tbody td					{padding: .25rem;}
+table tbody td					{padding: .75rem;}
 table tbody td					{vertical-align: middle;}
 table img 						{vertical-align: inherit;}
 table p + p						{margin-top: 1rem;}
@@ -220,10 +225,14 @@ table p + p						{margin-top: 1rem;}
 		-webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
 	}
 	.data-table tbody th			{display: none;}
-	.data-table tbody td			{padding: 0;}
+	.data-table tbody td			{padding: .3rem 0;}
 	.data-table tbody td			{border-bottom-width: 0; text-align: left;}
 	.data-table tbody tr			{padding: 1.5rem 0; border-bottom: 1px solid var(--bdr-color);}
-	.data-table tbody td[data-th]:before		{content: attr(data-th); display: inline;}
+	.data-table tbody td[data-th]	{display: flex; justify-content: space-between;}
+	.data-table tbody td[data-th]:before		{content: attr(data-th); display: block;}
+	.data-table tbody td[data-th="버튼"]	{justify-content: flex-end; gap: 8px; padding-top: 4px;}
+	.data-table tbody td[data-th="버튼"]:before	{content: '';}
+	
 }
 
 
@@ -301,16 +310,18 @@ table p + p						{margin-top: 1rem;}
 [class*="col"]								{overflow: hidden;}
 [class*="row-"]								{
 	display: flex;
-	-webkit-flex-wrap: wrap; flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 [class*="row"] > .col							{
-	-webkit-flex: 1 1 0; flex: 1 1 0;
+	flex: 1;
 }
 @media (max-width: 767px) {
-	[class*="row-"]							{
-		-webkit-flex-direction: column; flex-direction: column;
+	[class*="row-"],
+	.mo-pack-down								{
+		flex-direction: column;
 	}
+	
 }
 @media (min-width: 768px) {
 	.row-3 > .col						{
@@ -350,6 +361,7 @@ table p + p						{margin-top: 1rem;}
 [class*="row-"] > .box-wrap[class*="col"],
 #content .write-form fieldset.box-wrap			{padding: .75rem}
 #content > .box-wrap.write-form					{padding: 1.4rem}
+#content > .box-wrap.write-form fieldset.pack-down > hr.line{margin: 0 -1.4rem;}
 .box-wrap > .section-title + table	{margin-top: .5rem}
 .box-wrap > hr.line,
 .box-wrap > .tabs.box-header		{margin-right: -.75rem; margin-left: -.75rem; gap: 1.5rem;}
