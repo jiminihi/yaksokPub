@@ -63,8 +63,12 @@ strong,
 }
 .pack-center,
 .pack-left,
+.pack-right,
 .pack-both						{
 	align-items: center;
+}
+.pack-right						{
+	justify-content: flex-end;
 }
 .pack-inline		{
 	display: inline-flex;	

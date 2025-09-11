@@ -343,7 +343,7 @@ div.field:not(.both)							{
 .input-has-btn .select					{height: 46px; border: 0 none}
 .input-has-btn .input-text				{min-width: 50%;}
 .input-has-btn .input-text:first-child	{padding-right: 0}
-.input-has-btn .btn						{min-width: 55px; height: 46px; word-break: keep-all;}
+.input-has-btn .btn						{min-width: 55px; height: 46px;}
 .input-has-btn .unit					{min-width: 44px; padding-right: 16px; line-height: 46px; text-align: right;}
 .input-has-btn > .ico.shuffle			{margin-left: 16px;}
 .input-has-btn .unit.time				{min-width: 108px;}
