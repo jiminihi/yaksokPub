@@ -16,7 +16,7 @@ button:focus,
 a:focus						{outline-color: transparent; outline-style: none;}
 .btn 						{width: fit-content; font-size: inherit; text-align: center; vertical-align: middle; border: 0 none; outline: none; cursor: pointer; background-color: transparent; box-sizing: border-box; border-radius: 0; gap: 8px;
 	display: inline-flex; justify-content: center; align-items: center;
-	word-break: keep-all; white-space: normal;
+	word-break: keep-all; white-space: nowrap;
 }
 
 a.btn						{text-decoration: none;}
@@ -45,8 +45,7 @@ button.btn					{overflow: visible; margin: 0;}
 .btn.small:not(.circle)			{padding: 0 12px;}
 .btn.regular:not(.circle)		{padding: 0 16px;}
 .btn.medium:not(.circle)		{padding: 0 20px;}
-.btn.large:not(.circle)			{padding: 0 24px; }
-
+.btn.large:not(.circle)			{padding: 0 24px;}
 
 /* button circle */
 .btn.circle				{overflow: hidden;
